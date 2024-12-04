@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: black;
+    /* COR DO FUNDO - TANTO O NOME QUANTO O VALOR HEXADECIMAL */
+    font-family: "Montserrat", sans-serif;
+    /* FONTE DAS LETRAS */
+    padding: 0;
+    /* ESPAÇAMENTO DENTRO DOS ITEMS */
+    margin: 0;
+    /* DEFINE A MARGEM DOS ITEMS NA TELA */
+    position: relative;
+    /* DEFINE A POSIÇÃO DOS ITEMS NA TELA */
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+ul {
+    height: 5px;
+    /* ALTURA */
+    width: 95%;
+    /* LARGURA */
+    display: flex;
+    /* DEIXA OS ITEMS UM DO LADO DO OUTRO */
+    justify-content: space-between;
+    /* POSIÇÃO DOS ITEMS - NESSE CASO É UM EM CADA CANTO */
+    list-style-type: none;
+    /* TIRA OS PONTOS DE LISTA */
+    position: fixed;
+    z-index: 2;
+    margin: 5;
+}
+
+.img-topo {
+    height: 25px;
+    width: 90%;
+
+}
+
+video {
+    width: 99vw;
+    /* OCUPA A TELA TODA NO 100% NA LARGURA */
+    min-height: 80vh;
+    /* OCUPA NO MÍNIMO 80% NA ALTURA, SE A TELA CRESCER, ELE CRESCE JUNTO */
+    
+}
+
+.capa {
+    position: absolute;
+    bottom: 20%;
+    /* DISTÂNCIA A PARTIR DO POSICIONAMENTO ESPECIFICADO */
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+}
+
+.capa-titulo {
+    color: white;
+    font-size: 80px;
+    /* TAMANHO DA FONTE */
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* GROSSURA DA FONTE */
+}
+
+.capa-descricao {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.link-info {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.img-baixo {
+    height: 180px;
+}
+
+.titulo-carrossel {
+    color: white;   
+}
+
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+    bottom: -110px;
+    left: 50px;
+}
+
+.botao-som {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    z-index: 4;
+    cursor: pointer;
+    top: 100px;
+    right: 20px;
+    background-color: transparent;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
+}
